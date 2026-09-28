@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 
 /**
  * Stats Component
- * Styled to match the Phrase Passport metadata vouchers:
- * Clean 1px ink borders, terracotta uppercase labels, and elegant serif numbers.
+ * Styled to match the Cinema Heritage metadata vouchers:
+ * Clean 1px grid lines, amber gold uppercase labels, and elegant serif numbers.
  */
 function Stats({ movies = [] }) {
   const stats = useMemo(() => {

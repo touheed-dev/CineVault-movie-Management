@@ -1,24 +1,31 @@
 /* ==========================================================================
    CineVault – Movie Management System
-   Theme: Phrase Passport (passport.alimustufa.com)
-   Warm Paper, Deep Ink, Terracotta, and Editorial Serif Typography
+   Theme: Cinema Heritage & Celluloid Archive
+   Warm Archival Ivory, Film Noir Espresso, Celluloid Amber Gold & Velvet Crimson
    ========================================================================== */
 
 :root {
-  /* Exact Color Palette from passport.alimustufa.com */
-  --paper: #f3ecdf;
-  --paper-light: #fbf7ef;
-  --paper-cream: #f7f2ea;
-  --ink: #102d2b;
-  --ink-soft: #36514d;
-  --ink-muted: #5e7773;
-  --terracotta: #b55235;
-  --terracotta-dark: #893923;
-  --terracotta-light: rgba(181, 82, 53, 0.12);
-  --jade: #337064;
-  --gold: #b88939;
-  --line: rgba(16, 45, 43, 0.18);
-  --line-light: rgba(16, 45, 43, 0.08);
+  /* Bespoke CineVault Cinema Heritage Palette */
+  --paper: #f6f3ee;
+  --paper-light: #fdfcf9;
+  --paper-cream: #eee8dd;
+  --ink: #181412;
+  --ink-soft: #483f37;
+  --ink-muted: #7c7065;
+
+  /* Cinema Accents */
+  --accent: #b86a14;
+  --accent-dark: #8f4d06;
+  --accent-light: rgba(184, 106, 20, 0.12);
+  --crimson: #9e2a3b;
+  --crimson-dark: #7d1d2b;
+  --crimson-light: rgba(158, 42, 59, 0.12);
+  --teal: #1f6d62;
+  --gold: #d9941e;
+
+  /* Architectural Grid Lines */
+  --line: rgba(24, 20, 18, 0.15);
+  --line-light: rgba(24, 20, 18, 0.08);
 
   /* Typography */
   --serif: "Newsreader", "Playfair Display", "Iowan Old Style", "Baskerville", "Times New Roman", serif;
@@ -27,8 +34,8 @@
 
   /* Transitions & Shadows */
   --transition-smooth: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow-card: 0 20px 50px rgba(45, 33, 23, 0.08);
-  --shadow-modal: 0 30px 70px rgba(16, 45, 43, 0.22);
+  --shadow-card: 0 20px 50px rgba(24, 20, 18, 0.09);
+  --shadow-modal: 0 30px 70px rgba(24, 20, 18, 0.26);
 }
 
 /* Base Reset */
@@ -58,14 +65,14 @@ html, body {
 }
 
 /* ==========================================================================
-   Header Component (Phrase Passport Site Header)
+   Header Component (Cinema Heritage Site Header)
    ========================================================================== */
 .site-header {
   z-index: 50;
   border-bottom: 1px solid var(--line);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
-  background: rgba(243, 236, 223, 0.92);
+  background: rgba(246, 243, 238, 0.92);
   position: sticky;
   top: 0;
 }
@@ -101,7 +108,7 @@ html, body {
   place-items: center;
   background: var(--paper-light);
   flex-shrink: 0;
-  box-shadow: 0 2px 6px rgba(16, 45, 43, 0.08);
+  box-shadow: 0 2px 6px rgba(24, 20, 18, 0.08);
 }
 
 .brand-mark {
@@ -144,7 +151,7 @@ html, body {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: var(--terracotta);
+  color: var(--accent);
   text-transform: uppercase;
 }
 
@@ -213,8 +220,8 @@ html, body {
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: var(--terracotta);
-  border-color: var(--terracotta);
+  background: var(--accent);
+  border-color: var(--accent);
   color: #ffffff;
   transform: translateY(-1px);
 }
@@ -247,19 +254,19 @@ html, body {
 }
 
 .btn-outline:hover:not(:disabled) {
-  border-color: var(--terracotta);
-  color: var(--terracotta);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .btn-danger {
-  background: var(--terracotta);
+  background: var(--crimson);
   color: #ffffff;
-  border: 1px solid var(--terracotta);
+  border: 1px solid var(--crimson);
 }
 
 .btn-danger:hover:not(:disabled) {
-  background: var(--terracotta-dark);
-  border-color: var(--terracotta-dark);
+  background: var(--crimson-dark);
+  border-color: var(--crimson-dark);
 }
 
 .spin {
@@ -302,7 +309,7 @@ html, body {
 .dot-pulse {
   width: 7px;
   height: 7px;
-  background-color: var(--terracotta);
+  background-color: var(--accent);
   border-radius: 50%;
 }
 
@@ -358,19 +365,19 @@ html, body {
 }
 
 .op-status-200ok, .op-status-201created {
-  background: rgba(51, 112, 100, 0.15);
-  border-color: rgba(51, 112, 100, 0.35);
-  color: var(--jade);
+  background: rgba(31, 109, 98, 0.12);
+  border-color: rgba(31, 109, 98, 0.35);
+  color: var(--teal);
 }
 
 .op-status-error, .op-status-failed {
-  background: rgba(181, 82, 53, 0.15);
-  border-color: rgba(181, 82, 53, 0.35);
-  color: var(--terracotta);
+  background: rgba(158, 42, 59, 0.12);
+  border-color: rgba(158, 42, 59, 0.35);
+  color: var(--crimson);
 }
 
 /* ==========================================================================
-   Editorial Hero Section (Phrase Passport Hero)
+   Editorial Hero Section (Cinema Heritage Hero)
    ========================================================================== */
 .editorial-hero {
   position: relative;
@@ -398,11 +405,11 @@ html, body {
   top: -120px;
   right: -100px;
   box-shadow:
-    0 0 0 1px rgba(16, 45, 43, 0.12),
+    0 0 0 1px rgba(24, 20, 18, 0.12),
     0 0 0 28px transparent,
-    0 0 0 29px rgba(16, 45, 43, 0.08),
+    0 0 0 29px rgba(24, 20, 18, 0.08),
     0 0 0 58px transparent,
-    0 0 0 59px rgba(16, 45, 43, 0.05);
+    0 0 0 59px rgba(24, 20, 18, 0.05);
 }
 
 .circle-bottom-left {
@@ -411,11 +418,11 @@ html, body {
   bottom: -100px;
   left: -80px;
   box-shadow:
-    0 0 0 1px rgba(181, 82, 53, 0.15),
+    0 0 0 1px rgba(184, 106, 20, 0.16),
     0 0 0 24px transparent,
-    0 0 0 25px rgba(181, 82, 53, 0.1),
+    0 0 0 25px rgba(184, 106, 20, 0.1),
     0 0 0 50px transparent,
-    0 0 0 51px rgba(181, 82, 53, 0.06);
+    0 0 0 51px rgba(184, 106, 20, 0.06);
 }
 
 .hero-inner {
@@ -425,7 +432,7 @@ html, body {
 }
 
 .hero-eyebrow {
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.18em;
   font-size: 11px;
   font-weight: 700;
@@ -444,7 +451,7 @@ html, body {
 }
 
 .hero-headline em {
-  color: var(--terracotta);
+  color: var(--accent);
   font-style: italic;
   font-weight: 400;
 }
@@ -485,7 +492,7 @@ html, body {
 }
 
 .stats-kicker {
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 10px;
@@ -530,7 +537,7 @@ html, body {
 }
 
 .voucher-eyebrow {
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-size: 10px;
@@ -568,7 +575,7 @@ html, body {
 }
 
 .voucher-rating-badge {
-  color: var(--terracotta);
+  color: var(--accent);
   font-family: var(--serif);
   font-style: italic;
   font-size: 1rem;
@@ -585,7 +592,7 @@ html, body {
 }
 
 /* ==========================================================================
-   Search & Filter Panel (Phrase Passport Search Box)
+   Search & Filter Panel (Cinema Heritage Search Box)
    ========================================================================== */
 .passport-search-container {
   margin: 1.5rem 0 3rem 0;
@@ -599,7 +606,7 @@ html, body {
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
   background: var(--paper-light);
-  box-shadow: 0 4px 20px rgba(45, 33, 23, 0.04);
+  box-shadow: 0 4px 20px rgba(24, 20, 18, 0.04);
 }
 
 .search-box-cell {
@@ -626,7 +633,7 @@ html, body {
 }
 
 .search-cell-label {
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 10px;
@@ -698,7 +705,7 @@ html, body {
 }
 
 .filter-pill {
-  background: var(--terracotta);
+  background: var(--accent);
   color: var(--paper-light);
   font-family: var(--sans);
   font-size: 10px;
@@ -710,7 +717,7 @@ html, body {
 }
 
 /* ==========================================================================
-   Catalog Grid & Guide Cards (Phrase Passport Guide Cards)
+   Catalog Grid & Guide Cards (Cinema Heritage Guide Cards)
    ========================================================================== */
 .catalog-grid-wrapper {
   display: flex;
@@ -723,7 +730,7 @@ html, body {
 }
 
 .section-kicker {
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin: 0 0 6px;
@@ -763,13 +770,13 @@ html, body {
   background: var(--paper);
 }
 
-/* Iconic Concentric Circle Passport Watermark on Bottom Right */
+/* Iconic Concentric Circle Reel Watermark on Bottom Right */
 .guide-card::after {
   content: "";
   width: 140px;
   height: 140px;
-  box-shadow: inset 0 0 0 8px var(--paper), inset 0 0 0 9px rgba(181, 82, 53, 0.16);
-  border: 1px solid rgba(181, 82, 53, 0.2);
+  box-shadow: inset 0 0 0 8px var(--paper), inset 0 0 0 9px rgba(184, 106, 20, 0.16);
+  border: 1px solid rgba(184, 106, 20, 0.2);
   border-radius: 50%;
   position: absolute;
   bottom: -72px;
@@ -793,7 +800,7 @@ html, body {
 }
 
 .card-top-code {
-  color: var(--terracotta);
+  color: var(--accent);
   font-family: var(--serif);
   font-style: italic;
   font-size: 1.15rem;
@@ -814,11 +821,11 @@ html, body {
 }
 
 .star-char {
-  color: var(--terracotta);
+  color: var(--gold);
 }
 
 .guide-card-eyebrow {
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin: 0 0 6px;
@@ -882,7 +889,7 @@ html, body {
 }
 
 .placeholder-stamp {
-  border: 1px solid var(--terracotta);
+  border: 1px solid var(--accent);
   padding: 6px 14px;
   border-radius: 2px;
   display: flex;
@@ -894,7 +901,7 @@ html, body {
   font-family: var(--serif);
   font-size: 18px;
   font-weight: 700;
-  color: var(--terracotta);
+  color: var(--accent);
 }
 
 .stamp-label {
@@ -978,8 +985,8 @@ html, body {
 }
 
 .btn-action-edit:hover {
-  color: var(--terracotta);
-  border-bottom-color: var(--terracotta);
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .btn-action-edit .action-arrow {
@@ -995,11 +1002,11 @@ html, body {
   position: relative;
   z-index: 15;
   background: var(--paper-light);
-  color: var(--terracotta);
-  border: 1px solid rgba(181, 82, 53, 0.35);
+  color: var(--crimson);
+  border: 1px solid rgba(158, 42, 59, 0.35);
   border-radius: 3px;
   padding: 6px 14px;
-  box-shadow: 0 1px 3px rgba(45, 33, 23, 0.08);
+  box-shadow: 0 1px 3px rgba(24, 20, 18, 0.08);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1007,15 +1014,15 @@ html, body {
 
 .guide-card:hover .btn-action-delete {
   background: #ffffff;
-  border-color: rgba(181, 82, 53, 0.5);
-  box-shadow: 0 2px 5px rgba(45, 33, 23, 0.1);
+  border-color: rgba(158, 42, 59, 0.5);
+  box-shadow: 0 2px 5px rgba(24, 20, 18, 0.1);
 }
 
 .btn-action-delete:hover {
-  background: var(--terracotta) !important;
+  background: var(--crimson) !important;
   color: #ffffff !important;
-  border-color: var(--terracotta) !important;
-  box-shadow: 0 3px 8px rgba(181, 82, 53, 0.3) !important;
+  border-color: var(--crimson) !important;
+  box-shadow: 0 3px 8px rgba(158, 42, 59, 0.3) !important;
   transform: translateY(-1px);
   text-decoration: none;
 }
@@ -1039,8 +1046,8 @@ html, body {
 .cinema-spinner {
   width: 44px;
   height: 44px;
-  border: 3px solid rgba(16, 45, 43, 0.12);
-  border-top-color: var(--terracotta);
+  border: 3px solid rgba(24, 20, 18, 0.12);
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: spinSlow 0.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
@@ -1083,7 +1090,7 @@ html, body {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(16, 45, 43, 0.55);
+  background: rgba(24, 20, 18, 0.58);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
@@ -1135,13 +1142,13 @@ html, body {
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 700;
-  color: var(--terracotta);
+  color: var(--accent);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .danger-badge {
-  color: var(--terracotta-dark);
+  color: var(--crimson-dark);
 }
 
 .modal-title {
@@ -1196,7 +1203,7 @@ html, body {
 }
 
 .required-star {
-  color: var(--terracotta);
+  color: var(--crimson);
 }
 
 .optional-tag {
@@ -1219,17 +1226,17 @@ html, body {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--terracotta);
+  border-color: var(--accent);
   background: #ffffff;
 }
 
 .input-error {
-  border-color: var(--terracotta) !important;
+  border-color: var(--crimson) !important;
 }
 
 .error-message {
   font-size: 11px;
-  color: var(--terracotta);
+  color: var(--crimson);
   font-weight: 600;
 }
 
@@ -1252,7 +1259,7 @@ html, body {
 .btn-spinner {
   width: 14px;
   height: 14px;
-  border: 2px solid rgba(16, 45, 43, 0.2);
+  border: 2px solid rgba(24, 20, 18, 0.2);
   border-top-color: currentColor;
   border-radius: 50%;
   animation: spinSlow 0.6s linear infinite;
@@ -1281,7 +1288,8 @@ html, body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--terracotta-light);
+  background: var(--crimson-light);
+  color: var(--crimson);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1323,7 +1331,7 @@ html, body {
   font-family: var(--serif);
   font-weight: 600;
   font-size: 1.15rem;
-  color: var(--terracotta);
+  color: var(--crimson);
 }
 
 .movie-to-delete-sub {
@@ -1374,17 +1382,17 @@ html, body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  box-shadow: 0 10px 30px rgba(16, 45, 43, 0.15);
+  box-shadow: 0 10px 30px rgba(24, 20, 18, 0.15);
   min-width: 320px;
   max-width: 420px;
 }
 
 .toast-success {
-  border-left: 4px solid var(--jade);
+  border-left: 4px solid var(--teal);
 }
 
 .toast-error {
-  border-left: 4px solid var(--terracotta);
+  border-left: 4px solid var(--crimson);
 }
 
 .toast-icon {
@@ -1461,10 +1469,10 @@ html, body {
   background: var(--paper);
 }
 
-.chip-get { color: var(--jade); }
+.chip-get { color: var(--teal); }
 .chip-post { color: var(--ink); font-weight: 800; }
-.chip-put { color: var(--gold); }
-.chip-delete { color: var(--terracotta); }
+.chip-put { color: var(--accent); }
+.chip-delete { color: var(--crimson); }
 
 /* ==========================================================================
    Responsive Breakpoints

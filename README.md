@@ -9,14 +9,14 @@
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Axios](https://img.shields.io/badge/Axios-1.20-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
-[![MockAPI](https://img.shields.io/badge/Backend-MockAPI%20REST-102D2B?style=for-the-badge&logo=fastapi&logoColor=white)](https://mockapi.io/)
-[![License](https://img.shields.io/badge/License-MIT-B55235?style=for-the-badge)](LICENSE)
+[![MockAPI](https://img.shields.io/badge/Backend-MockAPI%20REST-181412?style=for-the-badge&logo=fastapi&logoColor=white)](https://mockapi.io/)
+[![License](https://img.shields.io/badge/License-MIT-B86A14?style=for-the-badge)](LICENSE)
 
 <br/>
 
 **A full-featured Movie Management Dashboard demonstrating complete CRUD REST operations in React, connected to a live MockAPI backend.**
 
-*Featuring a warm editorial cinema aesthetic — styled with paper canvas backgrounds, deep forest pine ink, terracotta accents, Newsreader serif typography, and vintage watermark stamps.*
+*Featuring a bespoke Cinema Heritage aesthetic — styled with archival ivory paper, deep 35mm film noir espresso charcoal, celluloid amber gold accents, velvet cinema crimson details, and Newsreader serif typography.*
 
 [Features](#-key-features) • [Tech Stack](#-tech-stack) • [Quick Start](#-quick-start) • [CRUD Architecture](#-crud-architecture--api-spec) • [Viva Guide](#-college-practical--viva-guide)
 
@@ -165,23 +165,26 @@ All API calls are centralized in [`src/services/movieService.js`](file:///w:/EXP
 
 ## 🎨 Design System & Color Palette
 
-CineVault features a warm, editorial cinema design system built on custom CSS variables, elegant serifs, and high-contrast ink styling:
+CineVault features a warm, bespoke Cinema Heritage design system built on custom CSS variables, elegant serifs, and high-contrast film noir espresso styling:
 
 ```css
 :root {
-  --paper: #f3ecdf;           /* Warm parchment canvas */
-  --paper-light: #fbf7ef;     /* Elevated voucher & card surface */
-  --ink: #102d2b;             /* Deep forest pine ink */
-  --ink-soft: #36514d;        /* Subtitles & editorial metadata */
-  --terracotta: #b55235;      /* Burnt sienna accents & italic highlights */
-  --terracotta-dark: #893923; /* Delete button hover */
-  --jade: #337064;            /* Status pills & REST badges */
-  --line: rgba(16, 45, 43, 0.18); /* 1px connected grid borders */
+  --paper: #f6f3ee;           /* Warm archival ivory canvas */
+  --paper-light: #fdfcf9;     /* Elevated alabaster card & modal surface */
+  --paper-cream: #eee8dd;     /* Warm linen hovers & secondary surfaces */
+  --ink: #181412;             /* 35mm film noir espresso charcoal */
+  --ink-soft: #483f37;        /* Warm sepia subtitles & metadata */
+  --accent: #b86a14;          /* Celluloid amber gold highlights & tags */
+  --accent-dark: #8f4d06;     /* Deep amber button hover */
+  --crimson: #9e2a3b;         /* Velvet cinema crimson for alerts & delete */
+  --crimson-dark: #7d1d2b;    /* Danger button hover */
+  --teal: #1f6d62;            /* Live REST 200 OK badges */
+  --line: rgba(24, 20, 18, 0.15); /* 1px connected grid borders */
 }
 ```
 
 ### 🔤 Typography & Font Stack
-- **Editorial Headlines & Titles**: *Newsreader* & *Playfair Display* (`--serif`) with high-contrast serif letterforms, tight tracking (`-0.045em`), and warm italic terracotta accents.
+- **Editorial Headlines & Titles**: *Newsreader* & *Playfair Display* (`--serif`) with high-contrast serif letterforms, tight tracking (`-0.045em`), and warm italic amber gold accents.
 - **Body & UI Controls**: *Plus Jakarta Sans* (`--sans`) for crisp form inputs, buttons, and navigation.
 - **Technical Badges**: System Monospace font stack (`--mono`) for REST API status indicators and ID tags.
 

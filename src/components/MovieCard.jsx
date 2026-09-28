@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 /**
  * MovieCard Component
- * Implements the Phrase Passport guide-card aesthetic:
- * Refined 1px grid borders, terracotta italic metadata, large serif titles,
- * and the iconic bottom-right concentric circle passport watermark.
+ * Implements the Cinema Heritage guide-card aesthetic:
+ * Refined 1px grid borders, amber gold italic metadata, large serif titles,
+ * and the iconic bottom-right concentric circle reel watermark.
  */
 function MovieCard({ movie, onEdit, onDelete }) {
   const [imageError, setImageError] = useState(false);

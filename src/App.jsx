@@ -320,20 +320,20 @@ function App() {
       </div>
 
       <main className="main-content">
-        {/* Editorial Hero Section matching Phrase Passport */}
+        {/* Editorial Hero Section */}
         <section className="editorial-hero">
           <div className="hero-decor-wrapper" aria-hidden="true">
             <div className="passport-concentric-circle circle-top-right"></div>
             <div className="passport-concentric-circle circle-bottom-left"></div>
           </div>
           <div className="hero-inner">
-            <p className="hero-eyebrow">A POCKET ARCHIVE TO CURATE CINEMATIC EXCELLENCE</p>
+            <p className="hero-eyebrow">A CURATED ARCHIVE TO PRESERVE GLOBAL CINEMA</p>
             <h2 className="hero-headline">
-              Speak a little. <br />
-              <em>Connect a lot.</em>
+              Frame a vision. <br />
+              <em>Preserve forever.</em>
             </h2>
             <p className="hero-deck">
-              The films people actually watch, the stories that make them resonate, and the cinematic craft worth carrying with you. Full CRUD integration with MockAPI.
+              The timeless masterpieces people rewatch, the global stories that redefine the craft, and the cinematic heritage worth cataloging. Full RESTful CRUD operations powered by MockAPI.
             </p>
           </div>
         </section>

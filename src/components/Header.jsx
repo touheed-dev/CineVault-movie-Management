@@ -2,8 +2,8 @@ import React from 'react';
 
 /**
  * Header Component
- * Styled following the Phrase Passport editorial layout:
- * Warm paper background, serif typography, deep ink wordmark, and terracotta accents.
+ * Styled following the Cinema Heritage editorial layout:
+ * Warm archival ivory background, serif typography, film noir espresso wordmark, and amber gold accents.
  */
 function Header({ onAddMovie, onLoadSampleData, onRefresh, isRefreshing, isSeeding, movieCount }) {
   return (
@@ -26,7 +26,7 @@ function Header({ onAddMovie, onLoadSampleData, onRefresh, isRefreshing, isSeedi
 
         {/* Navigation & Action Controls */}
         <nav className="header-nav" aria-label="Main controls">
-          <span className="header-motto">Cinema is a kind of luggage.</span>
+          <span className="header-motto">Every great story deserves an archive.</span>
 
           {/* Sync / Refresh Button */}
           <button

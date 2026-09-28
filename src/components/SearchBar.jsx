@@ -2,8 +2,8 @@ import React from 'react';
 
 /**
  * SearchBar Component
- * Styled following Phrase Passport's clean search / filter box:
- * Paper-light background, 1px deep ink lines, terracotta label headings,
+ * Styled following Cinema Heritage's clean search / filter box:
+ * Alabaster background, 1px grid lines, amber gold label headings,
  * and serif text styling.
  */
 function SearchBar({
