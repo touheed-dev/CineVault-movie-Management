@@ -1,6 +1,10 @@
 <div align="center">
 
-# <img src="public/logo.jpg" alt="CineVault Logo" width="56" height="56" style="vertical-align: middle; border-radius: 50%;" /> CineVault — Movie Management System
+<a href="https://github.com/touheed-dev/CineVault-movie-Management">
+  <img src="public/logo.jpg" alt="CineVault Logo" width="180" style="border-radius: 24px; box-shadow: 0 12px 36px rgba(0,0,0,0.35); margin-bottom: 12px;" />
+</a>
+
+# 🎬 CineVault — Movie Management System
 
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
