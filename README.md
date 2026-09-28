@@ -16,7 +16,7 @@
 
 **A full-featured Movie Management Dashboard demonstrating complete CRUD REST operations in React, connected to a live MockAPI backend.**
 
-*Styled in the warm editorial aesthetic of [Phrase Passport](https://passport.alimustufa.com/) — featuring paper canvas backgrounds, deep forest pine ink, terracotta accents, Newsreader serif typography, and vintage passport watermarks.*
+*Featuring a warm editorial cinema aesthetic — styled with paper canvas backgrounds, deep forest pine ink, terracotta accents, Newsreader serif typography, and vintage watermark stamps.*
 
 [Features](#-key-features) • [Tech Stack](#-tech-stack) • [Quick Start](#-quick-start) • [CRUD Architecture](#-crud-architecture--api-spec) • [Viva Guide](#-college-practical--viva-guide)
 
@@ -31,7 +31,7 @@
 - [Tech Stack](#-tech-stack)
 - [Project Directory Structure](#-project-directory-structure)
 - [CRUD Architecture & API Spec](#-crud-architecture--api-spec)
-- [Design System & Theme](#-design-system--phrase-passport-theme)
+- [Design System & Color Palette](#-design-system--color-palette)
 - [Quick Start & Setup](#-quick-start)
 - [College Practical & Viva Guide](#-college-practical--viva-guide)
 - [Code Quality & Linting](#-code-quality--linting)
@@ -94,7 +94,7 @@
 | **React 19** | Component-driven UI and state management (`useState`, `useEffect`, `useMemo`, `useCallback`) |
 | **Vite 8** | Modern build tool and fast HMR development server |
 | **Axios** | Dedicated Promise-based HTTP client for centralized REST operations |
-| **Vanilla CSS3** | Custom design system matching the Phrase Passport editorial theme |
+| **Vanilla CSS3** | Custom design system with CSS custom properties and responsive grid |
 | **Google Fonts** | *Newsreader* & *Playfair Display* (Editorial Serifs), *Plus Jakarta Sans* (UI Sans) |
 | **MockAPI** | Cloud REST API service providing live `/movies` endpoint |
 
@@ -163,9 +163,9 @@ All API calls are centralized in [`src/services/movieService.js`](file:///w:/EXP
 
 ---
 
-## 🎨 Design System — Phrase Passport Theme
+## 🎨 Design System & Color Palette
 
-Inspired by [passport.alimustufa.com](https://passport.alimustufa.com/):
+CineVault features a warm, editorial cinema design system built on custom CSS variables, elegant serifs, and high-contrast ink styling:
 
 ```css
 :root {
@@ -180,10 +180,15 @@ Inspired by [passport.alimustufa.com](https://passport.alimustufa.com/):
 }
 ```
 
-### Visual Highlights
+### 🔤 Typography & Font Stack
+- **Editorial Headlines & Titles**: *Newsreader* & *Playfair Display* (`--serif`) with high-contrast serif letterforms, tight tracking (`-0.045em`), and warm italic terracotta accents.
+- **Body & UI Controls**: *Plus Jakarta Sans* (`--sans`) for crisp form inputs, buttons, and navigation.
+- **Technical Badges**: System Monospace font stack (`--mono`) for REST API status indicators and ID tags.
+
+### 📐 Visual Highlights
 - **Connected 1px Borders**: Guide cards and vouchers share a single cohesive 1px ink border grid.
-- **Isolated Delete Button**: Solid opaque surface (`var(--paper-light)`) with elevated `z-index`, preventing the decorative watermark circle from cutting the button text in half.
-- **Editorial Typography**: Large serif headlines (*Newsreader*, *Playfair Display*) with italic terracotta accents and uppercase tracked eyebrows.
+- **Isolated Delete Button**: Solid opaque surface (`var(--paper-light)`) with elevated `z-index`, preventing decorative watermark circles from cutting the button text in half.
+- **Editorial Typography**: Large serif headlines paired with uppercase tracked labels for a refined, publication-grade feel.
 
 ---
 
