@@ -1,6 +1,6 @@
-# 🎬 CineVault — Movie Management System
-
 <div align="center">
+
+# <img src="public/logo.jpg" alt="CineVault Logo" width="56" height="56" style="vertical-align: middle; border-radius: 50%;" /> CineVault — Movie Management System
 
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
